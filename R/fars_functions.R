@@ -69,8 +69,8 @@ fars_read_years <- function(years) {
     file <- make_filename(yearz)
     tryCatch({
       dat <- fars_read(file)
-      dplyr::mutate(dat, year = yearz) %>%
-        dplyr::select(MONTH, year)
+      dplyr::mutate(dat, year_final = yearz) %>%
+        dplyr::select(MONTH, year_final)
     }, error = function(e) {
       warning("invalid year: ", yearz)
       return(NULL)
@@ -100,9 +100,9 @@ fars_read_years <- function(years) {
 fars_summarize_years <- function(years) {
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%
-    dplyr::group_by(year, MONTH) %>%
+    dplyr::group_by(year_final, MONTH) %>%
     dplyr::summarize(n = n()) %>%
-    tidyr::spread(year, n)
+    tidyr::spread(year_final, n)
 }
 
 #' Plot State Level Accidents (Geo-Plotting)
