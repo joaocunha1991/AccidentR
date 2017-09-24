@@ -1,7 +1,4 @@
 
-library(magrittr)
-library(maps)
-
 #' Import Accident Raw Data
 #'
 #' This function takes a filename and load the file into a R tibble dataframe.
