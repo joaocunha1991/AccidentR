@@ -7,7 +7,8 @@ Description: The AccidentR package uses data from the US National Highway Traffi
     The package includes functions to Import, Summarize and Plot US Traffic Accident Data in a user-friendly way.
 Imports:
     magrittr, 
-    maps
+    maps, 
+    dplyr
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
