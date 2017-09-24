@@ -64,15 +64,15 @@ make_filename <- function(year) {
 
 fars_read_years <- function(years) {
 
-  lapply(years, function(year) {
+  lapply(years, function(yearz) {
 
-    file <- make_filename(year)
+    file <- make_filename(yearz)
     tryCatch({
       dat <- fars_read(file)
-      dplyr::mutate(dat, year = year) %>%
+      dplyr::mutate(dat, year = yearz) %>%
         dplyr::select(MONTH, year)
     }, error = function(e) {
-      warning("invalid year: ", year)
+      warning("invalid year: ", yearz)
       return(NULL)
     })
   })
