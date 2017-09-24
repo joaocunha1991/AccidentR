@@ -1,6 +1,6 @@
 ---
 title: "AccidentR Overview"
-author: "João Cunha"
+author: "Joao Cunha"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
