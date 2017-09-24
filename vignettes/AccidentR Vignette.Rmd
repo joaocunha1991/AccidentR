@@ -20,7 +20,9 @@ The AccidentR package exports two functions that facilitate the Import, Summariz
 
 ## Installing AccidentR
 
-- --------- Explain here how to install the package from github -----
+```{r eval=FALSE}
+devtools::install_github("joaocunha1991/AccidentR")
+```
 
 ## Raw Data
 
