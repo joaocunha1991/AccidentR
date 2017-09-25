@@ -99,8 +99,10 @@ fars_read_years <- function(years) {
 #' @return A R tibble (wide format) dataframe with 'Years' on the rows and 'Months' as columns with the volume of accidents as values.
 #'
 #' @examples
+#' \dontrun{
 #' years <- c("2013","2014","2015")
 #' fars_summarize_years(years)
+#' }
 #'
 #' @export
 
@@ -129,7 +131,9 @@ fars_summarize_years <- function(years) {
 #' @return A geo-plot of the State Number (\code{state.num}) with the volume of accidents.
 #'
 #' @examples
+#' \dontrun{
 #' fars_map_state(state.num = "6", year = "2015")
+#'}
 #'
 #' @export
 
