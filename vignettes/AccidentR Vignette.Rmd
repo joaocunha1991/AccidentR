@@ -47,10 +47,10 @@ This will return a R tibble (wide format) dataframe with 'Years' on the rows and
 
 ```{r echo=FALSE}
 
-library(magrittr)
+#library(magrittr)
 
-years <- c("2013","2014","2015")
-AccidentR::fars_summarize_years(years)
+#years <- c("2013","2014","2015")
+#AccidentR::fars_summarize_years(years)
 
 
 ```
@@ -77,10 +77,10 @@ Please see an example of the output of *fars_map_state(state.num = "6", year = "
 
 ```{r echo=FALSE}
 
-library(magrittr)
-library(maps)
+#library(magrittr)
+#library(maps)
 
-AccidentR::fars_map_state(state.num = "6", year = "2015")
+#AccidentR::fars_map_state(state.num = "6", year = "2015")
 ```
 
 
