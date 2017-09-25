@@ -13,7 +13,10 @@ library(maps)
 #' @return A tibble dataframe representing the file \code{filename} loaded.
 #'
 #' @examples
-#' fars_read("filename.csv")
+#' \dontrun{
+#' fars_read("accident_2013.csv.bz2")
+#'}
+
 
 fars_read <- function(filename) {
 
@@ -35,7 +38,9 @@ fars_read <- function(filename) {
 #' @return A file name (character value) using the year passed in the format 'accident_\code{year}.csv.bz2'.
 #'
 #' @examples
+#' \dontrun{
 #' make_filename("2015")
+#' }
 
 
 make_filename <- function(year) {
@@ -59,8 +64,10 @@ make_filename <- function(year) {
 #' @return A list of R tibble dataframes.
 #'
 #' @examples
+#' \dontrun{
 #' years <- c("2013","2014","2015")
 #' fars_read_years(years)
+#' }
 
 fars_read_years <- function(years) {
 
