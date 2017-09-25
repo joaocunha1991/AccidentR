@@ -6,6 +6,9 @@ library(tidyr)
 library(graphics)
 library(maps)
 library(readr)
+library(AccidentR)
+
+test_check("AccidentR")
 
 #Tests for fars_summarize_years() function:
 test_that("Testing fars_summarize_years()", {
