@@ -10,7 +10,7 @@ devtools::install_github("joaocunha1991/AccidentR")
 
 ## Travis 
 
-https://travis-ci.org/joaocunha1991/AccidentR.svg?branch=master
+[![Build Status](https://travis-ci.org/joaocunha1991/AccidentR.svg?branch=master)](https://travis-ci.org/joaocunha1991/AccidentR)
 
 ## Authors
 
