@@ -45,7 +45,7 @@ fars_summarize_years(years)
 
 This will return a R tibble (wide format) dataframe with 'Years' on the rows and 'Months' as columns with the volume of accidents as values. The return format is as per below:
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=TRUE}
 
 library(magrittr)
 library(AccidentR)
@@ -76,7 +76,7 @@ Longitudes higher than 900 and Latitudes > than 90 are treated as NAs for plotti
 
 Please see an example of the output of *fars_map_state(state.num = "6", year = "2015")*:
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=TRUE}
 
 library(magrittr)
 library(maps)
