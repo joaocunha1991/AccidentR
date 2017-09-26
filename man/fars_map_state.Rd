@@ -27,6 +27,8 @@ If the filtered dataframe has zero records - the function returns a message 'no 
 Longitudes higher than 900 and Latitudes > than 90 are treated as NAs for plotting purposes.
 }
 \examples{
+\dontrun{
 fars_map_state(state.num = "6", year = "2015")
+}
 
 }

@@ -16,5 +16,7 @@ A file name (character value) using the year passed in the format 'accident_\cod
 This function takes a (\code{year}) as input and retrieves a character output consisting of a file name.
 }
 \examples{
+\dontrun{
 make_filename("2015")
+}
 }

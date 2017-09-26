@@ -20,5 +20,7 @@ If the file path/name is not found or valid, an error message is retrieved.
 This function uses and imports readr and dplyr packages form tidyverse package repository.
 }
 \examples{
-fars_read("filename.csv")
+\dontrun{
+fars_read("accident_2013.csv.bz2")
+}
 }

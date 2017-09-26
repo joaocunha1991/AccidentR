@@ -22,7 +22,9 @@ The function uses fars_read_years function (\code{\link{fars_read_years}}) to ex
 This function uses dplyr and tidyr packages form tidyverse package repository.
 }
 \examples{
+\dontrun{
 years <- c("2013","2014","2015")
 fars_summarize_years(years)
+}
 
 }

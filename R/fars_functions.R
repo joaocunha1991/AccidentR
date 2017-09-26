@@ -12,6 +12,8 @@ library(maps)
 #' @param filename A character value representing the filename to import.
 #' @return A tibble dataframe representing the file \code{filename} loaded.
 #'
+#' @import magrittr
+#'
 #' @examples
 #' \dontrun{
 #' fars_read("accident_2013.csv.bz2")
@@ -36,6 +38,8 @@ fars_read <- function(filename) {
 #'
 #' @param year A character variable representing the year to pass to the returned filename.
 #' @return A file name (character value) using the year passed in the format 'accident_\code{year}.csv.bz2'.
+#'
+#' @import magrittr
 #'
 #' @examples
 #' \dontrun{
@@ -62,6 +66,8 @@ make_filename <- function(year) {
 #'
 #' @param years A character vector of years.
 #' @return A list of R tibble dataframes.
+#'
+#' @import magrittr
 #'
 #' @examples
 #' \dontrun{
@@ -98,6 +104,8 @@ fars_read_years <- function(years) {
 #' @param years A character vector of years.
 #' @return A R tibble (wide format) dataframe with 'Years' on the rows and 'Months' as columns with the volume of accidents as values.
 #'
+#' @import magrittr
+#'
 #' @examples
 #' \dontrun{
 #' years <- c("2013","2014","2015")
@@ -129,6 +137,8 @@ fars_summarize_years <- function(years) {
 #' @param state.num A character variable representing the State Number reference to use to plot the volume of accidents.
 #' @param year A character variable representing the year of the file to import.
 #' @return A geo-plot of the State Number (\code{state.num}) with the volume of accidents.
+#'
+#' @import magrittr
 #'
 #' @examples
 #' \dontrun{

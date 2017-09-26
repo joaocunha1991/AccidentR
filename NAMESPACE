@@ -2,3 +2,4 @@
 
 export(fars_map_state)
 export(fars_summarize_years)
+import(magrittr)

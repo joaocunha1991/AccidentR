@@ -25,6 +25,8 @@ If an invalid year is retrieved (i.e. if there is no file with the parsed year i
 This function uses dplyr package form tidyverse package repository.
 }
 \examples{
+\dontrun{
 years <- c("2013","2014","2015")
 fars_read_years(years)
+}
 }
