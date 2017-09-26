@@ -8,6 +8,10 @@ This directory is an R Package built in the context of the Mastering Software De
 devtools::install_github("joaocunha1991/AccidentR")
 ```
 
+## Travis 
+
+https://travis-ci.org/joaocunha1991/AccidentR.svg?branch=master
+
 ## Authors
 
 * **João Cunha**
